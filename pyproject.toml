@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bridgexapi"
+version = "0.2.0"
+
+description = "Python SMS API SDK for sending SMS, bulk messaging and OTP delivery with route-based control and delivery tracking (Twilio alternative)"
+
+readme = "README.md"
+requires-python = ">=3.9"
+
+authors = [
+  { name = "BridgeXAPI" }
+]
+
+dependencies = [
+  "requests>=2.31.0"
+]
+
+keywords = [
+  "sms",
+  "sms api",
+  "python sms",
+  "send sms python",
+  "bulk sms",
+  "otp sms",
+  "twilio alternative",
+  "messaging api",
+  "sms sdk",
+  "sms python api",
+  "bridgexapi"
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Operating System :: OS Independent",
+  "Topic :: Communications",
+  "Topic :: Internet :: WWW/HTTP",
+]
+
+[project.urls]
+Homepage = "https://github.com/bridgexapi-dev/bridgexapi-python-sdk"
+Source = "https://github.com/bridgexapi-dev/bridgexapi-python-sdk"
+Documentation = "https://docs.bridgexapi.io"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["bridgexapi*"]
